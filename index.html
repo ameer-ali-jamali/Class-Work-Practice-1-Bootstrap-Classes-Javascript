@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<input type="text" name="" id="txtn">
+<button onclick="fnn()">login</button>
+<br>
+<hr>
+<label for="txtn">
+    <input type="text" name="" id="lbltxt">
+    <button onclick="fnnj()">sumit aa</button>
+
+
+</label>
+    <script>
+localStorage:[]
+       let sum = +0;
+       let kkk = "";
+       function fnn(kkk){
+        let k = document.getElementById("lbltxt").value = document.getElementById("txtn").value ;
+        let arr = [
+                [k],
+            ]
+            
+            for (let i = 0; i < arr.length; i++) {
+                for (let j = 0; j < arr.length; j++) {
+
+                }
+                document.write(arr[i]);
+
+                document.write("<br>");
+                document.write("<hr>");
+
+            }
+            do{
+            var b = confirm("Do You Want to Continue");
+            }while(b==true)
+        
+        }
+
+        do {
+
+            if (k.match(/[a-zA-Z]{5,}/) === null) {
+                alert("Invalid value!! Plese Enter Minumum 5 Charcters");
+                var cm = prompt("Its Your Last Warning Plese Enter >>....Y....<< For Continue");
+                
+                break;
+            }
+            kkk = kkk + "  " + "  " + k + " " + "  ";
+            if (k > 0 || k < 0) {
+                alert("Erro!! Plese Try Again")
+                break;
+            }
+            
+            sum++;
+
+        } while (b == true || cm == "y" || cm == "Y");
+        alert("You Entered " + sum + " Times");
+   
+   
+    </script>
+</body>
+
+</html>
