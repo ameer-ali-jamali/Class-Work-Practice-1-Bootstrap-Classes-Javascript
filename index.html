@@ -7,43 +7,43 @@
     <title>Document</title>
 </head>
 <body>
-    <table>
-        <tr style="background-color: orange;">
-            <th>Group No</th>
-            <th>Team Members</th>
-            <th>id</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            
-        </tr>
-        <tr>
-            <td>Akram Hussain</td>
-        </tr>
-        <tr>
-            <td>jsafdar@gmail.com</td>
-        </tr>
-        <tr>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>Jamjal ali</td>
-        </tr>
-        <tr>
-            <td>safdarali@gmail.com</td>
-        </tr>
-        <tr>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>Akram Ali</td>
-        </tr>
-        <tr>
-            <td>ahmadali@gmail.com</td>
-        </tr>
+    <input type="text" name="" id="inpt-val">
+    <label for="inptt">
+        <table>
+            <tr style="background-color: orange;">
+                <th> Group No</th>
+                <th>Team Members</th>
+                <th>Email ....</th>
+            </tr>
+            <tr>
+                <td><input type="text" name="" id="labl-val"></td>
+                &nbsp;
+                <td></td>
+                &nbsp;
+                <td></td>
+            </tr>
+            <tr>
+        </table>
+    
+    </label>
 
-        </tr>
-    </table>
 
+    <button onclick="fn()">Submit</button>
+
+
+    <script>
+let k;
+function fn(){
+  document.getElementById("labl-val").value = document.getElementById("inpt-val").value = k;
+
+
+
+}
+
+        // Object = {name: "Ameer ali", age:"22"};
+        // JSON=JSON.stringify(Object);
+        // console.log(JSON)
+
+    </script>
 </body>
 </html>
