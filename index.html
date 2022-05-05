@@ -8,7 +8,14 @@
 </head>
 <body>
     <input type="text" name="" id="inpt-val">
-    <label for="inptt">
+<br>
+<br>
+    <button onclick="fn()">Submit</button>
+<br>
+<br>
+<button onclick="cpy()">Submit same data</button>
+<br>
+    <label for="inptt" style="text-align: center;">
         <table>
             <tr style="background-color: orange;">
                 <th> Group No</th>
@@ -16,11 +23,12 @@
                 <th>Email ....</th>
             </tr>
             <tr>
-                <td><input type="text" name="" id="labl-val"></td>
+                <td id="labl-val"></td>
+                <td id="labl-val-2"></td>
                 &nbsp;
-                <td></td>
+                <td id="labl-val-3"></td>
                 &nbsp;
-                <td></td>
+                <td id="labl-val-4"></td>
             </tr>
             <tr>
         </table>
@@ -28,21 +36,12 @@
     </label>
 
 
-    <button onclick="fn()">Submit</button>
 
 
     <script>
-let k;
 function fn(){
-  document.getElementById("labl-val").value = document.getElementById("inpt-val").value = k;
-
-
-
+let strr =  document.getElementById("labl-val").innerText = document.getElementById("inpt-val").value ;
 }
-
-        // Object = {name: "Ameer ali", age:"22"};
-        // JSON=JSON.stringify(Object);
-        // console.log(JSON)
 
     </script>
 </body>
