@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <input type="text" name="" id="inpt-val">
-<br>
-<br>
+    <br>
+    <br>
     <button onclick="fn()">Submit</button>
-<br>
-<br>
-<button onclick="cpy()">Submit same data</button>
-<br>
-    <label for="inptt" style="text-align: center;">
-        <table>
-            <tr style="background-color: orange;">
-                <th> Group No</th>
-                <th>Team Members</th>
-                <th>Email ....</th>
-            </tr>
-            <tr>
-                <td id="labl-val"></td>
-                <td id="labl-val-2"></td>
+    <br>
+    <br>
+    <button onclick="jh()" id="sub-btn">Submit same data</button>
+    <br>
+
+    <table>
+        <tr style="background-color: orange;">
+            <th> Group No</th>
+            <th>Team Members</th>
+            <th>Email ....</th>
+        </tr>
+        <tr id="group-val">
+            <td>
                 &nbsp;
-                <td id="labl-val-3"></td>
+            </td>
+            <td>
                 &nbsp;
-                <td id="labl-val-4"></td>
-            </tr>
-            <tr>
-                <td id="labl-val"></td>
-                <td id="labl-val-2"></td>
+            </td>
+            <td>
                 &nbsp;
-                <td id="labl-val-3"></td>
-                &nbsp;
-                <td id="labl-val-4"></td>
-            </tr>
-           
-            <tr>
-        </table>
-    
-    </label>
+            </td>
+        </tr>
+
+
+        <tr>
+    </table>
+
 
 
 
 
     <script>
-function fn(){
-let strr =  document.getElementById("labl-val").innerText = document.getElementById("inpt-val").value ;
-}
+        function fn() {
+            let jk = document.getElementById("group-val").innerText = document.getElementById("inpt-val").value + "";
+        }
+        function jh() {
+            document.getElementById("sub-btn").innerText = fn;
+        }
 
     </script>
 </body>
+
 </html>
