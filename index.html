@@ -25,19 +25,13 @@
             <th>Email ....</th>
         </tr>
         <tr id="group-val">
-            <td>
-                &nbsp;
-            </td>
-            <td>
-                &nbsp;
-            </td>
-            <td>
-                &nbsp;
+            
+        </tr>
+        <tr>
+            <td id="inpt-">
+
             </td>
         </tr>
-
-
-        <tr>
     </table>
 
 
@@ -45,11 +39,14 @@
 
 
     <script>
+        
+        let y = document.getElementById("group-val").innerText + "";
         function fn() {
-            let jk = document.getElementById("group-val").innerText = document.getElementById("inpt-val").value + "";
+            let jk = document.getElementById("group-val").innerHTML = document.getElementById("inpt-val").value;
         }
-        function jh() {
-            document.getElementById("sub-btn").innerText = fn;
+        if (jk>0) {
+alert(y+jk);
+
         }
 
     </script>
