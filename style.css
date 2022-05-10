@@ -1,9 +1,10 @@
-hr{
-    width: 34%;
-    height: 16px;
-    background-color: red;
+/* td,
+th {
+    border: solid;
+    background-color: burlywood;
+    padding: 15px;
 }
-body{
-    text-align: center;
-    font-size: 25px;
-}
+
+table {
+    border-collapse: collapse;
+} */

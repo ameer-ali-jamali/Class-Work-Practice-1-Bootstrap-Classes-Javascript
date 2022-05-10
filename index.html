@@ -7,50 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
 </head>
+<a href="" class="btn bg-danger">click</a>
+<div class="container border-primary border 5">
+    <h1 class="btn-toolbar">Hello</h1>
+</div>
+<input type="text" name="" id="int-pt">
+<h2></h2>
+<br>
+<button onclick="fn()">Submit</button>
+<table class="tab-content table-hover">
+    
+    <tr>
+        <th>Group No</th>
+        <th>Contact</th>
+        <th>Email</th>
+    </tr>
+    <tr>
+        <td id="tab-data"></td>
+        <td id="tab-dat"></td>
+        <td id="tab-d"></td>
+    </tr>
+
+</table>
 
 <body>
 
 
     <script>
-
-        let sum = +0;
-        let kkk = "";
-        do {
-            let k = prompt("Enter Your Name with Cast << " + kkk + sum);
-
-            if (k.match(/[a-zA-Z]{5,}/) === null) {
-                alert("Invalid value!! Plese Enter Minumum 5 Charcters");
-                var cm = prompt("Its Your Last Warning Plese Enter >>....Y....<< For Continue");
-                if(cm=="y"){
-                    continue;
-                }
-                break;
-            }
-            kkk = kkk + "  " + "  " + k + " " + "  ";
-            if (k > 0 || k < 0) {
-                alert("Erro!! Plese Try Again")
-                break;
-            }
-            let arr = [
-                [k],
+       
+        
+       let arr = [
+                ["ameer","ali","jamali"],
             ]
             
-            sum++;
             for (let i = 0; i < arr.length; i++) {
                 for (let j = 0; j < arr.length; j++) {
 
+
                 }
-                document.write(arr[i]);
-
-                document.write("<br>");
-                document.write("<hr>");
-
+      
             }
-
-            var b = confirm("Do You Want to Continue")
-        } while (b == true || cm == "y" || cm == "Y");
-        alert("You Entered " + sum + " Times");
 
     </script>
 </body>
