@@ -9,8 +9,7 @@ To use this application, follow these steps:
 1. **Clone the Repository:**
 
    ```bash
-   git clone
-   cd student-records
+   git clone https://github.com/ameer-ali-jamali/Class-Work-Practice-1-Bootstrap-Classes-Javascript.git
    ```
 
 2. **Open `index.html` in your Browser:**
